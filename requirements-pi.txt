@@ -1,0 +1,8 @@
+# Raspberry Pi 5 (Raspberry Pi OS 64-bit). All have aarch64 wheels for Python 3.11 and 3.13 (checked 24 Nov 2026).
+scikit-learn==1.6.1      # SAME version your SMS model was trained with in Colab
+executorch==1.6.0        # runs llama3_2_1b.pte and network_mlp.pte
+pytorch-tokenizers
+pandas
+numpy
+psutil
+gradio

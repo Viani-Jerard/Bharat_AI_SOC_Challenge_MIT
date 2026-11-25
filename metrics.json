@@ -1,0 +1,117 @@
+{
+  "dataset": {
+    "name": "combined_dataset.csv (spam_sms.zip)",
+    "messages": 10223,
+    "spam": 2243,
+    "ham": 7980,
+    "test_size": 2045
+  },
+  "model": "Linear SVM (word+char)",
+  "threshold": 0.5,
+  "holdout_test_20pct": {
+    "accuracy": 0.9804,
+    "precision": 0.9723,
+    "recall": 0.9376,
+    "f1": 0.9546,
+    "roc_auc": 0.9981,
+    "confusion_matrix": {
+      "tn": 1584,
+      "fp": 12,
+      "fn": 28,
+      "tp": 421
+    }
+  },
+  "cv_5fold_f1": {
+    "mean": 0.9486,
+    "std": 0.0086
+  },
+  "latency_ms_per_sms": 9.29,
+  "model_file_kb": 5262.6,
+  "comparison": [
+    {
+      "model": "Linear SVM (word+char)",
+      "cv_f1": 0.9486,
+      "cv_f1_std": 0.0086,
+      "cv_accuracy": 0.9777,
+      "test_accuracy": 0.9804,
+      "test_precision": 0.9723,
+      "test_recall": 0.9376,
+      "test_f1": 0.9546,
+      "test_roc_auc": 0.9981,
+      "train_seconds": 14.1677,
+      "latency_ms_per_sms": 9.288,
+      "size_mb": 9.5412
+    },
+    {
+      "model": "Logistic Regression (word+char)",
+      "cv_f1": 0.9438,
+      "cv_f1_std": 0.0094,
+      "cv_accuracy": 0.9755,
+      "test_accuracy": 0.98,
+      "test_precision": 0.9722,
+      "test_recall": 0.9354,
+      "test_f1": 0.9535,
+      "test_roc_auc": 0.9979,
+      "train_seconds": 13.8497,
+      "latency_ms_per_sms": 5.0733,
+      "size_mb": 5.5442
+    },
+    {
+      "model": "Linear SVM (word)",
+      "cv_f1": 0.9289,
+      "cv_f1_std": 0.0111,
+      "cv_accuracy": 0.9693,
+      "test_accuracy": 0.9746,
+      "test_precision": 0.9606,
+      "test_recall": 0.922,
+      "test_f1": 0.9409,
+      "test_roc_auc": 0.9943,
+      "train_seconds": 3.4067,
+      "latency_ms_per_sms": 4.3823,
+      "size_mb": 3.9763
+    },
+    {
+      "model": "Logistic Regression (word)",
+      "cv_f1": 0.9246,
+      "cv_f1_std": 0.0098,
+      "cv_accuracy": 0.9672,
+      "test_accuracy": 0.9726,
+      "test_precision": 0.9559,
+      "test_recall": 0.9176,
+      "test_f1": 0.9364,
+      "test_roc_auc": 0.994,
+      "train_seconds": 7.9226,
+      "latency_ms_per_sms": 1.0519,
+      "size_mb": 2.3744
+    },
+    {
+      "model": "Naive Bayes (word)",
+      "cv_f1": 0.9194,
+      "cv_f1_std": 0.007,
+      "cv_accuracy": 0.9652,
+      "test_accuracy": 0.9682,
+      "test_precision": 0.9444,
+      "test_recall": 0.9087,
+      "test_f1": 0.9262,
+      "test_roc_auc": 0.9915,
+      "train_seconds": 2.312,
+      "latency_ms_per_sms": 2.7477,
+      "size_mb": 3.5743
+    },
+    {
+      "model": "Random Forest (word)",
+      "cv_f1": 0.8559,
+      "cv_f1_std": 0.0125,
+      "cv_accuracy": 0.9431,
+      "test_accuracy": 0.9496,
+      "test_precision": 0.9779,
+      "test_recall": 0.7884,
+      "test_f1": 0.873,
+      "test_roc_auc": 0.98,
+      "train_seconds": 43.7832,
+      "latency_ms_per_sms": 84.2122,
+      "size_mb": 67.3932
+    }
+  ],
+  "sklearn_version": "1.6.1"
+}

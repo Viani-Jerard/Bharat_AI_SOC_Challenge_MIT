@@ -1,0 +1,158 @@
+{
+  "dataset": {
+    "name": "CIC-IDS2017 (cleaned)",
+    "rows_after_dedup": 2497759,
+    "rows_used": 725679,
+    "normal_used": 300000,
+    "features": 52,
+    "classes": [
+      "Bots",
+      "Brute Force",
+      "DDoS",
+      "DoS",
+      "Normal Traffic",
+      "Port Scanning",
+      "Web Attacks"
+    ],
+    "test_rows": 145136
+  },
+  "histgradientboosting": {
+    "accuracy": 0.9989458163377798,
+    "macro_f1": 0.9892781404871652,
+    "binary_attack_precision": 0.9985687302760473,
+    "binary_attack_recall": 0.9997768276639729,
+    "per_class": {
+      "Bots": {
+        "precision": 0.8985849056603774,
+        "recall": 0.9794344473007712,
+        "f1-score": 0.9372693726937269,
+        "support": 389.0
+      },
+      "Brute Force": {
+        "precision": 0.9989071038251366,
+        "recall": 0.9989071038251366,
+        "f1-score": 0.9989071038251366,
+        "support": 1830.0
+      },
+      "DDoS": {
+        "precision": 0.9997656982193065,
+        "recall": 0.9999609420771003,
+        "f1-score": 0.9998633106168596,
+        "support": 25603.0
+      },
+      "DoS": {
+        "precision": 0.9988138827291011,
+        "recall": 0.999741908842203,
+        "f1-score": 0.9992776803219482,
+        "support": 38746.0
+      },
+      "Normal Traffic": {
+        "precision": 0.9996827887874185,
+        "recall": 0.9979666666666667,
+        "f1-score": 0.9988239905919247,
+        "support": 60000.0
+      },
+      "Port Scanning": {
+        "precision": 0.9983479266479431,
+        "recall": 0.9994487016924858,
+        "f1-score": 0.998898010909692,
+        "support": 18139.0
+      },
+      "Web Attacks": {
+        "precision": 0.9839449541284404,
+        "recall": 1.0,
+        "f1-score": 0.991907514450867,
+        "support": 429.0
+      },
+      "accuracy": 0.9989458163377798,
+      "macro avg": {
+        "precision": 0.9825781799996748,
+        "recall": 0.9964942529149091,
+        "f1-score": 0.9892781404871652,
+        "support": 145136.0
+      },
+      "weighted avg": {
+        "precision": 0.9989713520702361,
+        "recall": 0.9989458163377798,
+        "f1-score": 0.9989533259050914,
+        "support": 145136.0
+      }
+    },
+    "train_seconds": 58.80526614189148,
+    "false_alarm_rate_unseen_normal": 0.0019266666666666666,
+    "unseen_normal_checked": 300000,
+    "model_file_kb": 446.7744140625,
+    "latency_ms_single_flow_mean": 3.8364518266735104,
+    "latency_ms_single_flow_p95": 4.36330350011076,
+    "batch_flows_per_second": 66507.34015585307
+  },
+  "mlp_executorch": {
+    "accuracy": 0.994708411421012,
+    "macro_f1": 0.9316125208760858,
+    "per_class": {
+      "Bots": {
+        "precision": 0.599290780141844,
+        "recall": 0.8688946015424165,
+        "f1-score": 0.7093389296956978,
+        "support": 389.0
+      },
+      "Brute Force": {
+        "precision": 0.9988956377691883,
+        "recall": 0.9885245901639345,
+        "f1-score": 0.9936830541060149,
+        "support": 1830.0
+      },
+      "DDoS": {
+        "precision": 0.9998437316873071,
+        "recall": 0.9996094207710033,
+        "f1-score": 0.9997265625,
+        "support": 25603.0
+      },
+      "DoS": {
+        "precision": 0.9972033766637319,
+        "recall": 0.9939090486759924,
+        "f1-score": 0.9955534874101649,
+        "support": 38746.0
+      },
+      "Normal Traffic": {
+        "precision": 0.9961705685618729,
+        "recall": 0.99285,
+        "f1-score": 0.9945075125208681,
+        "support": 60000.0
+      },
+      "Port Scanning": {
+        "precision": 0.9983473805982482,
+        "recall": 0.9991179227079773,
+        "f1-score": 0.998732503030971,
+        "support": 18139.0
+      },
+      "Web Attacks": {
+        "precision": 0.715008431703204,
+        "recall": 0.9883449883449883,
+        "f1-score": 0.8297455968688845,
+        "support": 429.0
+      },
+      "accuracy": 0.994708411421012,
+      "macro avg": {
+        "precision": 0.9006799867321995,
+        "recall": 0.9758929388866162,
+        "f1-score": 0.9316125208760858,
+        "support": 145136.0
+      },
+      "weighted avg": {
+        "precision": 0.9955058709953459,
+        "recall": 0.994708411421012,
+        "f1-score": 0.9949737344307065,
+        "support": 145136.0
+      }
+    },
+    "train_seconds": 20.84382200241089,
+    "pte_kb": 65.90234375,
+    "pte_vs_pytorch_max_diff": 2.6775524020195007e-09,
+    "pte_latency_ms_mean": 0.09561367999746533
+  },
+  "versions": {
+    "sklearn": "1.9.1",
+    "torch": "2.15.0+cu132"
+  }
+}
